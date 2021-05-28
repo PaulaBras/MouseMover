@@ -1,0 +1,27 @@
+﻿<Window x:Class="MouseMover.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MouseMover"
+        mc:Ignorable="d"
+        Title="Idle Program" Height="250" Width="450" Icon="/Computer.png" Background="#FFB7E0CE" Foreground="Black">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+        <Button x:Name="start_btn" Content="Start Idle" Grid.Column="0" Grid.Row="1" MaxHeight="50" MaxWidth="150" Click="start_btn_Click"/>
+        <Label Content="Enter your idle interval in seconds:" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="seconds_label" Content="Seconds must be over 5!" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
+        <TextBox x:Name="input_str" PreviewTextInput="PreviewTextInput" TextChanged="input_str_TextChanged" Grid.Column="0" Grid.Row="0" MaxHeight="20" MaxLines="1" MaxLength="5" MaxWidth="150" Text="60"/>
+        <Label Content="Status:" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Rectangle x:Name="Status" Grid.Column="1" Grid.Row="1" Stroke="Black" Height="50" Width="100"/>
+        <CheckBox x:Name="Smooth_Mouse" Content="Smooth Mouse" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Click="CheckBox_Click"/>
+
+    </Grid>
+</Window>
