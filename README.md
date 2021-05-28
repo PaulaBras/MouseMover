@@ -24,7 +24,7 @@ On the bottom right you see the current Status of the Program. Red means its off
 
 # Pictures:
 
-Program stopped / started:
+Program stopped:
 
 ![Alt Text](Example%20picture.PNG)
 
