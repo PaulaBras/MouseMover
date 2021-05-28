@@ -3,6 +3,8 @@ This Program can move your mouse to let other programs think, that you’re on t
 # How to use
 After you start it, you see this:
  
+![Alt Text](Example%20picture.PNG)
+
 In the upper left corner, you can type the interval the program moves your mouse around. Note: you can’t go below 5 seconds (you will then receive a message.
 
 In the upper right corner you can decide if you want a smooth mouse movement or not by ticking the checkbox it enables the smooth movement.
@@ -16,5 +18,3 @@ On the bottom right you see the current Status of the Program. Red means its off
 -	Smooth out Mouse movement
 -	Stopp and start the idle
 -	See the Status
-
-![Alt Text](Example%20picture.PNG)
