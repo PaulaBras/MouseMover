@@ -34,4 +34,4 @@ Program interrupted:
 
 Program active:
 
-![Alt Text](Example%20picture%203.PNG)
+![Alt Text](Example%20picture%203.png)
