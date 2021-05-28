@@ -18,24 +18,28 @@ namespace MouseMover
                         CurPosition.X += 1;
                         Cursor.Position = CurPosition;
                         Thread.Sleep(20);
+                        if (MainWindow.abort == true) break;
                     }
                     for (int i = 0; i <= MainWindow.MoveSteps; i++)
                     {
                         CurPosition.Y += 1;
                         Cursor.Position = CurPosition;
                         Thread.Sleep(20);
+                        if (MainWindow.abort == true) break;
                     }
                     for (int i = 0; i <= MainWindow.MoveSteps; i++)
                     {
                         CurPosition.X -= 1;
                         Cursor.Position = CurPosition;
                         Thread.Sleep(20);
+                        if(MainWindow.abort == true) break;
                     }
                     for (int i = 0; i <= MainWindow.MoveSteps; i++)
                     {
                         CurPosition.Y -= 1;
                         Cursor.Position = CurPosition;
                         Thread.Sleep(20);
+                        if (MainWindow.abort == true) break;
                     }
                 }
                 else
@@ -43,12 +47,15 @@ namespace MouseMover
                     CurPosition.X += MainWindow.MoveSteps;
                     Cursor.Position = CurPosition;
                     Thread.Sleep(500);
+                    if (MainWindow.abort == true) break;
                     CurPosition.Y += MainWindow.MoveSteps;
                     Cursor.Position = CurPosition;
                     Thread.Sleep(500);
+                    if (MainWindow.abort == true) break;
                     CurPosition.X -= MainWindow.MoveSteps;
                     Cursor.Position = CurPosition;
                     Thread.Sleep(500);
+                    if (MainWindow.abort == true) break;
                     CurPosition.Y -= MainWindow.MoveSteps;
                     Cursor.Position = CurPosition;
                 }

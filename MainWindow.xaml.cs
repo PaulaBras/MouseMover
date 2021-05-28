@@ -15,6 +15,7 @@ namespace MouseMover
         #region Initalset General
         public static bool running = false;
         public static bool smooth = false;
+        public static bool abort = false;
         public static int seconds = 0;
         public static int MoveSteps = 100;
         Thread t1;
@@ -28,10 +29,26 @@ namespace MouseMover
             input_str.IsEnabled = true;
             start_btn.IsEnabled = true;
             seconds_label.Opacity = 0;
+            Operation.Opacity = 0;
             Status.Fill = new SolidColorBrush(Colors.Red);
             #endregion
 
+            this.KeyDown += new KeyEventHandler(MainWindow_KeyDown);
         }
+
+        void MainWindow_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.F5)
+            {
+                Status.Fill = new SolidColorBrush(Colors.Orange);
+                running = false;
+                input_str.IsEnabled = true;
+                abort = true;
+                Operation.Opacity = 100;
+                start_btn.Content = "Start Idle";
+            }
+        }
+
 
         private void start_btn_Click(object sender, RoutedEventArgs e)
         {
@@ -39,6 +56,8 @@ namespace MouseMover
             {
                 if(seconds >= 5)
                 {
+                    abort = false;
+                    Operation.Opacity = 0;
                     input_str.IsEnabled = false;
                     seconds_label.Opacity = 0;
                     running = true;
@@ -54,6 +73,7 @@ namespace MouseMover
             }
             else
             {
+                abort = true;
                 input_str.IsEnabled = true;
                 running = false;
                 start_btn.Content = "Start Idle";

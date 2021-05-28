@@ -20,6 +20,7 @@
         <Label x:Name="seconds_label" Content="Seconds must be over 5!" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
         <TextBox x:Name="input_str" PreviewTextInput="PreviewTextInput" TextChanged="input_str_TextChanged" Grid.Column="0" Grid.Row="0" MaxHeight="20" MaxLines="1" MaxLength="5" MaxWidth="150" Text="60"/>
         <Label Content="Status:" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="Operation" Content="Operation aborted" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
         <Rectangle x:Name="Status" Grid.Column="1" Grid.Row="1" Stroke="Black" Height="50" Width="100"/>
         <CheckBox x:Name="Smooth_Mouse" Content="Smooth Mouse" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Click="CheckBox_Click"/>
 
