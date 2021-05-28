@@ -21,3 +21,17 @@ On the bottom right you see the current Status of the Program. Red means its off
 -	Stopp and start the idle
 -	See the Status
 -	Abort the cooperation immediately
+
+# Pictures:
+
+Program stopped / started:
+
+![Alt Text](Example%20picture.PNG)
+
+Program interrupted:
+
+![Alt Text](Example%20picture%202.PNG)
+
+Program active:
+
+![Alt Text](Example%20picture%203.PNG)
