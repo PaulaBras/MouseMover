@@ -1,0 +1,11 @@
+D:\Cloud\GitHub\MouseMover\publishx86\MouseMover.pdb
+D:\Cloud\GitHub\MouseMover\publishx86\clrcompression.dll
+D:\Cloud\GitHub\MouseMover\publishx86\clrjit.dll
+D:\Cloud\GitHub\MouseMover\publishx86\coreclr.dll
+D:\Cloud\GitHub\MouseMover\publishx86\mscordaccore.dll
+D:\Cloud\GitHub\MouseMover\publishx86\D3DCompiler_47_cor3.dll
+D:\Cloud\GitHub\MouseMover\publishx86\PenImc_cor3.dll
+D:\Cloud\GitHub\MouseMover\publishx86\PresentationNative_cor3.dll
+D:\Cloud\GitHub\MouseMover\publishx86\vcruntime140_cor3.dll
+D:\Cloud\GitHub\MouseMover\publishx86\wpfgfx_cor3.dll
+D:\Cloud\GitHub\MouseMover\publishx86\MouseMover.exe
